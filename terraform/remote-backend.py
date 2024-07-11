@@ -14,7 +14,7 @@ class MyStack(TerraformStack):
 
         # Configure remote state backend (S3 bucket)
         S3Backend(self,
-                  bucket="my-terraform-state-bucket",
+                  bucket="pycon-bucket",
                   key="terraform.tfstate",
                   region="us-west-2")
 
