@@ -1,0 +1,10 @@
+name: pycon-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A Python program to deploy a virtual machine on Amazon EC2
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: vm-aws-python
