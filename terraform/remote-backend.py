@@ -10,17 +10,17 @@ class MyStack(TerraformStack):
         super().__init__(scope, id)
 
         # Define AWS provider
-        AwsProvider(self, "AWS", region="us-west-2")
+        AwsProvider(self, "AWS", region="us-west-1")
 
         # Configure remote state backend (S3 bucket)
         S3Backend(self,
-                  bucket="pycon-bucket",
+                  bucket="pycon-buckets",
                   key="terraform.tfstate",
-                  region="us-west-2")
+                  region="us-west-1")
 
         # Define resources
         instance = Instance(self, "Compute",
-                            ami="ami-12345678",
+                            ami="ami-01456a894f71116f2",
                             instance_type="t2.micro")
 
         # Output instance details

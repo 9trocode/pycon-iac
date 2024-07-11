@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+*.log
+*.tsbuildinfo
+
+# Python
+*.pyc
+__pycache__/
+.venv/
+env/
+venv/
+*.pyo
+*.pyd
+*.pdb
+
+# CDK
+cdk.out/
+cdk.context.json
+.idea/
+.vscode/
+.local/
+# Ignore Python virtual environment
+/aws/.venv/
+
+# MacOS
+.DS_Store
+
+# Environment variables
+.env
+
+# System files
+Thumbs.db
