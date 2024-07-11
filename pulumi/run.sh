@@ -11,7 +11,7 @@ cd "$SCRIPT_DIR" || exit
 export PULUMI_CONFIG_PASSPHRASE="pycon-pulumi"
 
 # Pulumi commands
-pulumi login   # Log in to Pulumi
+#pulumi login   # Log in to Pulumi
 pulumi stack select dev   # Select the Pulumi stack
 pulumi up --yes   # Deploy the Pulumi stack
 
