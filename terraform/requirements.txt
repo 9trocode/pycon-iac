@@ -1,5 +1,0 @@
-constructs>=10.0.0,<11.0.0
-aws-cdk-lib>=2.0.0
-cdktf>=0.6.4
-cdktf-cdktf-provider-aws
-aws
