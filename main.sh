@@ -39,6 +39,12 @@ run_script "aws/run.sh" "🚀" "Deploying AWS CDK application..."
 # Destroy AWS CDK script
 run_script "aws/destroy.sh" "🔥" "Destroying AWS CDK application..."
 
-# Additional actions or cleanup if needed
 
+# Run Pulumi script
+run_script "pulumi/run.sh" "🚀" "Deploying Pulumi application..."
+
+# Destroy Pulumi script
+run_script "pulumi/destroy.sh" "🔥" "Destroying Pulumi application..."
+
+# Additional actions or cleanup if needed
 echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed.${NC}"
