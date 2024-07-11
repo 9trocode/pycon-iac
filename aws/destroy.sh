@@ -13,7 +13,7 @@ export CDK_DEFAULT_REGION=us-west-1
 # CDK commands
 cdk bootstrap      # Boostrap CloudFormation templates
 cdk synth      # Synthesize CloudFormation templates
-cdk destroy --all --require-approval never   # Deploy all stacks
+cdk destroy --all --force   # Deploy all stacks
 
 # Unset environment variables (optional)
 unset CDK_DEFAULT_ACCOUNT

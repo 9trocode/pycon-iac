@@ -19,10 +19,17 @@ ami = aws.ec2.get_ami(filters=[aws.ec2.GetAmiFilterArgs(
     most_recent=True).id
 
 # User data to start a HTTP server in the EC2 instance
+# User data to start an HTTP server and embed docs.pipeops.io in an iframe
 user_data = """#!/bin/bash
-echo "Hello, World from Pulumi!" > index.html
+echo "Hello, Lion here!" > index.html
 nohup python -m SimpleHTTPServer 80 &
+
+# Embedding docs.pipeops.io in an iframe
+echo '<iframe src="https://docs.pipeops.io" style="width:100%; height:100vh; border:none;"></iframe>' > docs.html
 """
+
+print(user_data)
+
 
 # Create VPC.
 vpc = aws.ec2.Vpc("vpc",
