@@ -21,7 +21,7 @@ ami = aws.ec2.get_ami(filters=[aws.ec2.GetAmiFilterArgs(
 # User data to start a HTTP server in the EC2 instance
 # User data to start an HTTP server and embed docs.pipeops.io in an iframe
 user_data = """#!/bin/bash
-echo '<iframe src="https://docs.pipeops.io" style="width:100%; height:100vh; border:none;"></iframe>' > index.html
+echo '<iframe src="https://github.com/9trocode/pycon-iac" style="width:100%; height:100vh; border:none;"></iframe>' > index.html
 nohup python -m SimpleHTTPServer 80 &
 """
 
