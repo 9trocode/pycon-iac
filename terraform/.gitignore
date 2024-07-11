@@ -13,6 +13,7 @@
 /*.tfstate
 /*.tfstate.*
 imports
+states
 
 # Ignore local .env files (for environment variables)
 .env
