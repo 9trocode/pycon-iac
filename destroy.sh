@@ -27,14 +27,17 @@ run_script() {
     fi
 }
 
+# PipeOps Orbit branding
+echo -e "${GREEN}🚀🚀 Welcome to PipeOps Orbit 🚀🚀${NC}"
+
 # Destroy Terraform script
-run_script "terraform/destroy.sh" "🔥" "Destroying CDKTF application..."
+run_script "terraform/destroy.sh" "🔥" "Destroying CDKTF application with PipeOps Orbit..."
 
 # Destroy AWS CDK script
-run_script "aws/destroy.sh" "🔥" "Destroying AWS CDK application..."
+run_script "aws/destroy.sh" "🔥" "Destroying AWS CDK application with PipeOps Orbit..."
 
 # Destroy Pulumi script
-run_script "pulumi/destroy.sh" "🔥" "Destroying Pulumi application..."
+run_script "pulumi/destroy.sh" "🔥" "Destroying Pulumi application with PipeOps Orbit..."
 
 # Additional actions or cleanup if needed
-echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed.${NC}"
+echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed with PipeOps Orbit.${NC}"

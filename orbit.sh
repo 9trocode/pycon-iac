@@ -27,14 +27,17 @@ run_script() {
     fi
 }
 
+# PipeOps Orbit branding
+echo -e "${GREEN}🚀🚀 Welcome to PipeOps Orbit 🚀🚀${NC}"
+
 # Run Terraform script
-run_script "terraform/run.sh" "🚀" "Deploying CDKTF application..."
+run_script "terraform/run.sh" "🚀" "Deploying CDKTF application with PipeOps Orbit..."
 
 # Run AWS CDK script
-run_script "aws/run.sh" "🚀" "Deploying AWS CDK application..."
+run_script "aws/run.sh" "🚀" "Deploying AWS CDK application with PipeOps Orbit..."
 
 # Run Pulumi script
-run_script "pulumi/run.sh" "🚀" "Deploying Pulumi application..."
+run_script "pulumi/run.sh" "🚀" "Deploying Pulumi application with PipeOps Orbit..."
 
 # Additional actions or cleanup if needed
-echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed.${NC}"
+echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed with PipeOps Orbit.${NC}"
