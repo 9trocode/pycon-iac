@@ -27,21 +27,11 @@ run_script() {
     fi
 }
 
-# Run Terraform script
-run_script "terraform/run.sh" "🚀" "Deploying CDKTF application..."
-
 # Destroy Terraform script
 run_script "terraform/destroy.sh" "🔥" "Destroying CDKTF application..."
 
-# Run AWS CDK script
-run_script "aws/run.sh" "🚀" "Deploying AWS CDK application..."
-
 # Destroy AWS CDK script
 run_script "aws/destroy.sh" "🔥" "Destroying AWS CDK application..."
-
-
-# Run Pulumi script
-run_script "pulumi/run.sh" "🚀" "Deploying Pulumi application..."
 
 # Destroy Pulumi script
 run_script "pulumi/destroy.sh" "🔥" "Destroying Pulumi application..."
