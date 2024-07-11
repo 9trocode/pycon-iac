@@ -40,5 +40,5 @@ region = "us-west-1"
 if not account or not region:
     raise ValueError("Environment variables CDK_DEFAULT_ACCOUNT and CDK_DEFAULT_REGION must be set")
 
-AwsStack(app, "MyAwsStack", env=Environment(account=account, region=region))
+AwsStack(app, "pycon-aws-cdk", env=Environment(account=account, region=region))
 app.synth()

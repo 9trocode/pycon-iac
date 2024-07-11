@@ -32,6 +32,6 @@ class MyStack(TerraformStack):
 
 
 app = App()
-MyStack(app, "python-terraform")
+MyStack(app, "pycon-terraform-cdk")
 
 app.synth()

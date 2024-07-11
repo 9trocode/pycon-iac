@@ -17,7 +17,7 @@ nvm use 20
 cdktf synth   # Synthesize Terraform configuration without deploying
 
 # CDKTerraform deploy command
-cdktf destroy
+cdktf destroy --auto-approve
 
 # Exit with the status of the last executed command
 exit $?

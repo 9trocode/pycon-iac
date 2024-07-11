@@ -31,7 +31,7 @@ class MyStack(TerraformStack):
 
 # Create an App instance and stack
 app = App()
-MyStack(app, "python-terraform-cdk")
+MyStack(app, "pycon-terraform-cdk")
 
 # Synthesize the Terraform code
 app.synth()
