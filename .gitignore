@@ -1,0 +1,33 @@
+# CDKTF (CDK for Terraform) .gitignore
+
+# Ignore CDKTF build directories
+/.gen/
+/.gen.py/
+
+# Ignore Python virtual environment
+/terraform/.venv/
+
+
+# Ignore Terraform state files and directories
+/.terraform/
+/*.tfstate
+/*.tfstate.*
+imports
+
+# Ignore local .env files (for environment variables)
+.env
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore logs and other runtime files
+*.log
+*.out
+*.pid
+*.sock
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+.idea
