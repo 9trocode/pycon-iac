@@ -1,6 +1,6 @@
 {
   "language": "python",
-  "app": "pipenv run python simple.py",
+  "app": "pipenv run python remote-backend.py",
   "terraformProviders": [
     {
       "name": "aws",

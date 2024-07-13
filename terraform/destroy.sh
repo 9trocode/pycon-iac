@@ -18,6 +18,3 @@ cdktf synth   # Synthesize Terraform configuration without deploying
 
 # CDKTerraform deploy command
 cdktf destroy --auto-approve
-
-# Exit with the status of the last executed command
-exit $?
