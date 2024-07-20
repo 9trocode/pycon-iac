@@ -40,4 +40,4 @@ run_script "aws/destroy.sh" "🔥" "Destroying AWS CDK application with PipeOps 
 run_script "pulumi/destroy.sh" "🔥" "Destroying Pulumi application with PipeOps Orbit..."
 
 # Additional actions or cleanup if needed
-echo -e "${GREEN}${SUCCESS_EMOJI} All operations completed with PipeOps Orbit.${NC}"
+echo -e "${GREEN}${SUCCESS_EMOJI} All destroy operations completed with PipeOps Orbit.${NC}"
